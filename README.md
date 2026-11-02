@@ -53,7 +53,7 @@ The frame, the flight controller and the firmware will be published in this repo
 | Power | 1S LiPo with PH2.0 connector, TPS63020 buck-boost converter, slide power switch |
 | Motors | 4 x 720 coreless brushed motors, 55 mm propellers, low-side MOSFET drivers |
 | Link | WiFi access point on the drone, Bluetooth advertising for discovery |
-| Flight time | about 1.5-2 minutes on a 400 mAh 20C battery |
+| Flight time | about 3.5-4 minutes on a 400 mAh 20C battery |
 
 ## Parts
 
@@ -66,7 +66,7 @@ Sparrow is built from parts sold by common electronics and hobby suppliers. The 
 | GY-530 module ([VL53L0X](https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html)) | 1 | downward time-of-flight rangefinder for height hold |
 | 720 coreless brushed motor, 2 clockwise and 2 counter-clockwise | 4 | propulsion |
 | 55 mm propellers for 1 mm shafts | 2 pairs | 2 clockwise and 2 counter-clockwise; spares recommended |
-| 1S LiPo, 400 mAh, PH2.0 plug | 1 | power, about 1.5-2 minutes of flight |
+| 1S LiPo, 400 mAh, PH2.0 plug | 1 | power, about 3.5-4 minutes of flight |
 | Rubber motor collars, M2 screws, nylon lock nuts, nylon washers and silicone grommets | 4 each | motor and flight controller mounting |
 | Flight controller board, 40 x 40 mm | 1 | ordered from a PCB service, which assembles the power stage and the motor drivers |
 | Carbon-fibre frame, 1.5 mm, 100 x 100 mm | 1 | CNC-milled from a single DXF |
