@@ -4,8 +4,8 @@ Sparrow's frame and flight controller. Their files will be published here.
 
 | Part | Version | Files to be published | Licence |
 |---|---|---|---|
-| Frame | v1.0 | DXF for CNC milling, 1.5 mm carbon fibre | CC BY-NC-SA 4.0 |
-| Flight controller | v1.0 | EasyEDA Pro source, schematic, Gerber, BOM, pick-and-place | CERN-OHL-S-2.0 |
+| Frame | 1.0 | DXF for CNC milling, 1.5 mm carbon fibre | CC BY-NC-SA 4.0 |
+| Flight controller | 1.0 | EasyEDA Pro source, schematic, Gerber, BOM, pick-and-place | CERN-OHL-S-2.0 |
 
 **Frame:** 100 x 100 mm, 1.5 mm carbon fibre, with snap-on landing gear and four 720 coreless motors on 55 mm propellers. It is adapted from [LiteWing](https://github.com/Circuit-Digest/LiteWing) by Circuit Digest.
 

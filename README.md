@@ -35,8 +35,8 @@ A test flight in October 2026: selecting the drone in the app, joining its WiFi 
 
 | Component | Version | Status |
 |---|---|---|
-| Frame | v1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
-| Flight controller | v1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
+| Frame | 1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
+| Flight controller | 1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
 | Firmware | 1.0.0 | flight-tested; source in preparation for [firmware/](firmware/README.md) |
 | SparrowFlight iOS app | 1.0.0 | awaiting App Store release; see [software/](software/README.md) |
 

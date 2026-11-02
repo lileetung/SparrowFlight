@@ -35,8 +35,8 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 
 | 元件 | 版本 | 狀態 |
 |---|---|---|
-| 機架 | v1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
-| 飛控板 | v1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
+| 機架 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
+| 飛控板 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
 | 韌體 | 1.0.0 | 已完成飛行測試，原始碼整理中，將放在 [firmware/](firmware/README.md) |
 | SparrowFlight iOS App | 1.0.0 | 等待 App Store 上架，見 [software/](software/README.md)（英文） |
 
