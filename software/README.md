@@ -26,11 +26,12 @@ The app is distributed through the App Store. Its source code is not part of thi
 ## Connecting
 
 1. Tap **Choose a drone**. The list shows nearby drones with their 4-character ID, firmware version, battery and signal strength. iOS does not let apps scan for WiFi, so the list comes from the drone's Bluetooth advertising; the first time, iOS asks for Bluetooth permission. A drone advertises while it is on the ground and no app is flying it.
-2. Tap a drone. iOS asks to join its WiFi network (`SPARROW_<MAC>`, password `12345678`); tap Join. The app then waits until the drone has given the phone an address (a few seconds, at most 10) and sends only over the drone's WiFi, never over mobile data.
+2. Tap a drone. iOS asks to join its WiFi network (`SPARROW_<MAC>`, password `12345678`); tap Join. The first time, iOS then asks whether the app may find devices on the local network; tap Allow. The app then waits until the drone has given the phone an address (a few seconds, at most 10) and sends only over the drone's WiFi, never over mobile data.
 3. The app checks the drone. All items are listed at once, those that can stop a flight first, and each is ticked as soon as the drone has told it, usually all within a second:
 
    | Item | Source |
    |---|---|
+   | Local network | telemetry arriving means iOS allows it; sends refused while the phone is on the drone's network mean the Local Network permission is still being asked or is off |
    | Firmware | the first line of `get` (the app asks every 2 s until the drone answers) |
    | Telemetry | `T,` lines arriving |
    | IMU | the firmware's hardware report (`hw`, also the second line of `get`) |
@@ -40,6 +41,8 @@ The app is distributed through the App Store. Its source code is not part of thi
    The camera picture does not wait for the check: it appears as soon as the drone sends it.
 
    The title reads **Checking**, then **Ready**. The sticks and the take-off button work only once the check has passed; **Emergency stop** works whenever the app is connected. Without an IMU the drone cannot fly, and the check stops at **Cannot fly**. It also stops there when a battery is in but the firmware has kept the motors off: a computer was on USB at power-up, or the battery read below 3.3 V. The battery item then reads **Motors off, restart it**; without a ToF the app continues in thrust mode; a missing camera does not stop it. Items that have not answered after 10 s count as missing. If the drone answers later (for example while it is still calibrating its gyro after power-up), the check carries on by itself.
+
+   When sending fails or the check stops, **Reconnect** under the list connects to the same drone again. The first time, iOS asks for Local Network access; tap Allow. If it was turned off, the check shows **Local network: Not allowed** with a **Settings** button that opens the app's page in Settings, where Local Network can be turned on. Once it is allowed the link comes up by itself.
 
 Settings > **Advanced link** takes the IP address of another device on the network the phone is on; the main screen then connects straight to it, without the Bluetooth list or joining a drone's WiFi. The drone itself is at `192.168.43.42`, the default; leaving the field empty means the drone.
 
@@ -64,7 +67,7 @@ The take-off height and the lowest and highest hold heights are parameters (Sett
 - **Emergency stop:** the solid dark red round button (**STOP**) in the bottom-left corner, under the left stick, so the left thumb reaches it at once. It stops the motors at once, and the app repeats it every 0.1 s until the drone confirms. Only the flying screen has it: while the console is open (for example while **Calibrate motors** spins the propellers), swipe the console down first. The drone is ready again once the left stick has been centred (thrust 0 in thrust mode) for 1 s after the press.
 - **Console:** every reply from the drone and every command sent, the three calibrations as buttons, each explained and confirmed before it is sent (**Calibrate IMU**, `level`: the frame still on a flat surface; **Calibrate ToF**, `unitcal tof`: the drone still on its legs on a flat, light-coloured surface; **Calibrate motors**, `trim measure`: propellers on, hands off), and a field for any command, up to 120 bytes, such as `get`, `imu` or `trim`.
 - If the app goes to the background it disconnects, and the firmware starts an automatic landing after 0.5 s without stick packets.
-- If telemetry stops for 5 s (15 s while flying), the app disconnects and returns to the drone list.
+- If telemetry stops for 5 s (15 s while flying), the app disconnects and returns to the drone list, which then offers **Reconnect** with the drone's ID to connect to it again.
 - The top bar reads **No telemetry** (with a warning vibration) once telemetry has stopped for 1 s in the air, or 3 s on the ground: on the ground short gaps are normal (the phone scans other channels just after joining the drone's WiFi), and the drone does not wait for the app anyway, landing 0.5 s after the stick packets stop.
 
 ## Camera
