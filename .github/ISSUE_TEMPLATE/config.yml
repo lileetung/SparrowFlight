@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Support and email
+    url: https://github.com/lileetung/SparrowFlight/blob/main/SUPPORT.md
+    about: How to get help, and the email address for people without a GitHub account.

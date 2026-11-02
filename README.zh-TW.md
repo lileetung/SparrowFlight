@@ -4,74 +4,84 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">用容易買到的零件，自己組一台小型四軸無人機</p>
+<p align="center">以現成零件組裝的小型四軸無人機</p>
 
 <p align="center"><a href="README.md">English</a> | 繁體中文</p>
 
-SparrowFlight 是一個開源專案，讓大家用容易買到的零件，自己組一台小型四軸無人機。這台無人機叫 **Sparrow**。飛控是一片 40 × 40 mm 的 2 層板：交給 JLCPCB 這類 PCB 廠製作，並焊好電源和馬達驅動，你再裝上三個到處都買得到的模組：Seeed XIAO ESP32-S3、GY-521（MPU-6050 IMU）和 GY-530（VL53L0X ToF 測距）。其他都是常見的模型零件：四顆 720 空心杯馬達配 55 mm 槳、1S 鋰聚電池，以及從一片 100 × 100 mm 碳纖維板切出來的機架。Sparrow 用 iPhone 上的 **SparrowFlight** App 透過 WiFi 遙控。
+SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機平台。它的無人機 Sparrow 由現成模組（Seeed XIAO ESP32-S3、GY-521 IMU、GY-530 ToF 測距模組）、可由一般 PCB 廠製作與組裝的 2 層飛控板、從單片 100 × 100 mm 碳纖維板切割的機架，以及常見的 720 空心杯馬達組成，適合想要親手組裝、理解並修改小型無人機的創客、學生與教育工作者。
+
+機架、飛控板與韌體正在整理，將以開放授權釋出，詳見[專案進度](#專案進度)。Sparrow 以 iPhone 上的配套 App「SparrowFlight」操控。
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow 正面：碳纖維機架、四顆空心杯馬達和 55 mm 槳，1S 電池綁在機架上方">
   <img src="docs/images/sparrow-back.jpg" width="380" alt="Sparrow 底部：XIAO ESP32-S3 飛控板和朝下的 ToF 感測器">
 </p>
 
-## 試飛
+## 特色
+
+- **現成零件**：主控與感測器都是一般電子零件通路販售的模組，馬達、螺旋槳與電池則是小型無人機的標準零件。
+- **為量產設計**：飛控板附 JLCPCB 組裝用的 BOM 與座標檔，機架為單一 DXF 檔，可直接 CNC 切割。
+- **定高**：朝下的 ToF 測距維持離地高度，並用於按鈕起飛與自動降落。
+- **手機 WiFi 操控**：無人機自建 WiFi 熱點並以藍牙廣播供 App 搜尋，也相容 ESP-Drone 的 commander 封包。
+- **機上飛行紀錄**：黑盒子將最近幾次飛行記錄在 flash，供事後分析。
+
+## 展示
 
 <a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow 從頂樓起飛、懸停，用 iPhone 遙控"></a>
 
-2026 年 10 月在頂樓的試飛：在 App 裡選無人機、加入它的 WiFi、起飛和懸停。完整影片（36 秒）在 [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
+2026 年 10 月的試飛：在 App 中選擇無人機、加入其 WiFi 網路、起飛並懸停。完整影片（36 秒）：[docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
 
-## 進度
+## 專案進度
 
-| 部分 | 版本 | 進度 |
+| 元件 | 版本 | 狀態 |
 |---|---|---|
-| 機架 | v1.0 | 已經在飛，檔案整理中，會放在 [hardware/](hardware/README.md) |
-| 飛控板 | v1.0 | 已經在飛，檔案整理中，會放在 [hardware/](hardware/README.md) |
-| 韌體 | 1.0.0 | 已經在飛，原始碼整理中，會放在 [firmware/](firmware/README.md) |
-| SparrowFlight iPhone App | 1.0.0 | 即將上架 App Store，見 [software/](software/README.md)（英文） |
+| 機架 | v1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
+| 飛控板 | v1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
+| 韌體 | 1.0.0 | 已完成飛行測試，原始碼整理中，將放在 [firmware/](firmware/README.md) |
+| SparrowFlight iOS App | 1.0.0 | 等待 App Store 上架，見 [software/](software/README.md)（英文） |
 
-機架、飛控板和韌體會連同零件清單和組裝說明公開在這個 repo，各自的授權見 [LICENSE.md](LICENSE.md)（英文）。
+機架、飛控板與韌體將連同材料清單與組裝說明公開於本 repo，授權見 [LICENSE.md](LICENSE.md)（英文）。
 
 ## 規格
 
 | | |
 |---|---|
-| 機架 | 100 × 100 mm，1.5 mm 碳纖維，起落架直接卡上 |
-| 飛控板 | 40 × 40 mm、2 層板，用防震球吊在機架下方 |
-| 主控 | Seeed XIAO ESP32-S3 Plus，或可傳相機畫面的 XIAO ESP32-S3 Sense |
+| 機架 | 100 × 100 mm，1.5 mm 碳纖維，卡扣式起落架 |
+| 飛控板 | 40 × 40 mm、2 層板，以矽膠防震球懸吊於機架下方 |
+| 主控 | Seeed XIAO ESP32-S3 Plus，或可傳輸相機畫面的 XIAO ESP32-S3 Sense |
 | 感測器 | MPU-6050 IMU（GY-521 模組）、朝下的 VL53L0X ToF 測距（GY-530 模組） |
-| 電源 | 1S 鋰聚電池（PH2.0 接頭）、TPS63020 升降壓、滑動電源開關 |
+| 電源 | 1S 鋰聚電池（PH2.0 接頭）、TPS63020 升降壓轉換器、滑動電源開關 |
 | 馬達 | 4 顆 720 空心杯有刷馬達、55 mm 槳、低側 MOSFET 驅動 |
-| 連線 | 無人機上的 WiFi 熱點，藍牙廣播讓 App 找到它 |
+| 連線 | 無人機端 WiFi 熱點，藍牙廣播供搜尋 |
 | 飛行時間 | 400 mAh 20C 電池約 1.5–2 分鐘 |
 
-韌體功能：自穩模式、跟著地面高低變化的 ToF 定高、按鈕起飛和自動降落、速度模式、量一次就存起來的馬達 trim、機上黑盒子記錄、讓 App 找到附近無人機的藍牙廣播，以及用 XIAO ESP32-S3 Sense 時傳給 App 的相機畫面。
-
-## App
+## 配套 App
 
 <img src="docs/images/app-flying.jpg" width="720" alt="SparrowFlight App 飛行中的畫面：左邊是升降和轉向搖桿，右邊是左右和前後搖桿，中間是高度 62 cm，下方是降落和緊停按鈕">
 
-SparrowFlight 用藍牙列出附近的無人機，點一下就加入它的 WiFi，連上後先檢查無人機，通過才出現搖桿。可以按按鈕起飛和降落，也可以用推力搖桿決定定高的高度；搖桿後方顯示機上相機的畫面，也能修改飛行參數。主控台和每次連線的飛行紀錄方便調校。App 不收集任何個人資料。
+iPhone 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人機的 WiFi 網路，並在開放操控前檢查無人機狀態。支援按鈕起飛與降落，或以推力搖桿控制高度；可在搖桿後方顯示機上相機畫面，並編輯飛行參數。主控台與每次連線的飛行紀錄可協助調校。App 不收集任何個人資料。
 
-完整說明見 [software/README.md](software/README.md)（英文），以及[隱私權政策](software/PRIVACY.md)（英文）。
+文件：[App 說明](software/README.md)（英文）與[隱私權政策](software/PRIVACY.md)（英文）。
 
-## Repo 內容
+## Repo 結構
 
 | 資料夾 | 內容 |
 |---|---|
-| [`hardware/`](hardware/) | 機架和飛控板（尚未公開） |
+| [`hardware/`](hardware/) | 機架與飛控板（尚未公開） |
 | [`firmware/`](firmware/) | 飛控韌體（尚未公開） |
-| [`software/`](software/) | SparrowFlight App 的說明和隱私權政策（App 本身不開源） |
-| [`docs/`](docs/) | 照片和試飛影片 |
+| [`software/`](software/) | SparrowFlight App 的說明與隱私權政策（App 本身不開源） |
+| [`docs/`](docs/) | 照片與展示影片 |
 
-## 支援
+## 支援與貢獻
 
-問題和回報：見 [SUPPORT.md](SUPPORT.md)（英文）。
+問題與回報請見 [SUPPORT.md](SUPPORT.md)（英文）。參與方式請見 [CONTRIBUTING.md](CONTRIBUTING.md)（英文），所有參與者都應遵守[行為準則](CODE_OF_CONDUCT.md)（英文）。
 
 ## 安全
 
-鋰聚電池受損、短路或過充可能起火：用合格的充電器充電，充電時不要離開。螺旋槳轉動時會割傷人：接著電池處理無人機時先拆槳，遠離人群飛行，並遵守當地的無人機法規。設計和軟體不提供任何保固。
+鋰聚電池在受損、短路或過度充電時可能起火，請使用合適的充電器，充電時勿離開。旋轉中的螺旋槳可能造成傷害：接著電池維修無人機前請先拆下螺旋槳，遠離人群飛行，並遵守當地的無人機法規。設計與軟體不提供任何保固。
 
-## 名稱
+## 授權
 
-「SparrowFlight」和「Sparrow」這兩個名稱，以及麻雀 logo，不在這個 repo 的授權範圍內。設計公開後，你可以依照授權製作、修改、分享 Sparrow，但請不要把你的版本說成官方版本。
+文件與照片採用 CC BY-SA 4.0。機架（CC BY-NC-SA 4.0，改自 [LiteWing](https://github.com/Circuit-Digest/LiteWing)）、飛控板（CERN-OHL-S-2.0）與韌體（GPL-3.0）將以各自的授權釋出。iOS App 不開源。詳見 [LICENSE.md](LICENSE.md)（英文）。
+
+「SparrowFlight」、「Sparrow」名稱與麻雀 logo 不在上述授權範圍內。設計公開後，可依授權製作並分享衍生版本，但不得宣稱為官方版本。

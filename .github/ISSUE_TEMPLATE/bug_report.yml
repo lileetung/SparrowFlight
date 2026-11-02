@@ -1,0 +1,43 @@
+name: Bug report
+description: Something in the SparrowFlight app or on the drone does not work as described
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to the drone
+        2. Tap Take off
+        3. ...
+  - type: input
+    id: app
+    attributes:
+      label: App version
+      description: Settings > About in the app.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+      description: Shown at the top of the screen once connected.
+      placeholder: "1.0.0"
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model and iOS version
+      placeholder: "iPhone 15, iOS 26.1"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Flight log
+      description: If there is one, attach the .csv and .events.txt files of that connection, from the Files app under On My iPhone > SparrowFlight > logs.

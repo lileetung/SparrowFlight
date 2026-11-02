@@ -4,74 +4,84 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">Build your own micro quadcopter from parts that are easy to get</p>
+<p align="center">A micro quadcopter built from off-the-shelf parts</p>
 
 <p align="center">English | <a href="README.zh-TW.md">繁體中文</a></p>
 
-SparrowFlight is an open-source project for building a small quadcopter yourself, from parts that are easy to get. The drone is called **Sparrow**. Its flight controller is a 40 x 40 mm two-layer board: a PCB service such as JLCPCB makes it and assembles the power stage and the motor drivers, and you add three modules you can buy anywhere, a Seeed XIAO ESP32-S3, a GY-521 (MPU-6050 IMU) and a GY-530 (VL53L0X ToF rangefinder). The rest are common hobby parts: four 720 coreless motors with 55 mm propellers, a 1S LiPo, and a carbon-fibre frame cut from one 100 x 100 mm sheet. Sparrow is flown over WiFi from an iPhone with the **SparrowFlight** app.
+SparrowFlight is a micro quadcopter platform designed to be built from widely available parts. Its drone, Sparrow, combines off-the-shelf modules (a Seeed XIAO ESP32-S3, a GY-521 IMU and a GY-530 time-of-flight sensor) with a two-layer flight controller that standard PCB services can manufacture and assemble, a carbon-fibre frame cut from a single 100 x 100 mm sheet, and common 720 coreless motors. It is intended for makers, students and educators who want a small drone they can build, understand and modify.
+
+The frame, the flight controller and the firmware are being prepared for release under open licences; see [Project status](#project-status). Sparrow is flown from an iPhone with the companion app, SparrowFlight.
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow from the front: carbon-fibre frame, four coreless motors with 55 mm propellers, and a 1S battery strapped on top">
   <img src="docs/images/sparrow-back.jpg" width="380" alt="Sparrow from below: the flight controller with the XIAO ESP32-S3 and the downward ToF sensor">
 </p>
 
-## Test flight
+## Highlights
+
+- **Off-the-shelf parts.** The microcontroller and the sensors are breakout modules sold by common electronics suppliers; the motors, propellers and battery are standard micro-drone parts.
+- **Made to be manufactured.** The flight controller comes with a BOM and a placement file for assembly at JLCPCB; the frame is a single DXF for CNC milling.
+- **Height hold.** A downward time-of-flight sensor holds the height above the surface below, and drives button take-off and automatic landing.
+- **Phone control over WiFi.** The drone runs its own access point and advertises over Bluetooth, and it also accepts ESP-Drone's commander packets.
+- **Flight log on board.** A blackbox records recent flights in flash for later analysis.
+
+## Demo
 
 <a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow taking off from a rooftop and hovering, flown from an iPhone"></a>
 
-A test flight on a rooftop in October 2026: choosing the drone in the app, joining its WiFi, taking off and hovering. The full clip (36 s) is [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
+A test flight in October 2026: selecting the drone in the app, joining its WiFi network, taking off and hovering. Full clip (36 s): [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
 
-## Status
+## Project status
 
-| Part | Version | Status |
+| Component | Version | Status |
 |---|---|---|
-| Frame | v1.0 | flying; files being prepared for [hardware/](hardware/README.md) |
-| Flight controller | v1.0 | flying; files being prepared for [hardware/](hardware/README.md) |
-| Firmware | 1.0.0 | flying; source being prepared for [firmware/](firmware/README.md) |
-| SparrowFlight, the iPhone app | 1.0.0 | coming to the App Store; see [software/](software/README.md) |
+| Frame | v1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
+| Flight controller | v1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
+| Firmware | 1.0.0 | flight-tested; source in preparation for [firmware/](firmware/README.md) |
+| SparrowFlight iOS app | 1.0.0 | awaiting App Store release; see [software/](software/README.md) |
 
-The frame, the flight controller and the firmware will be published in this repository, with their parts lists and build instructions, under the licences listed in [LICENSE.md](LICENSE.md).
+The frame, the flight controller and the firmware will be published in this repository with their bills of materials and build instructions, under the licences listed in [LICENSE.md](LICENSE.md).
 
-## What it is
+## Specifications
 
 | | |
 |---|---|
 | Frame | 100 x 100 mm, 1.5 mm carbon fibre, snap-on landing gear |
-| Flight controller | 40 x 40 mm, 2 layers, hung under the frame on silicone grommets |
-| MCU | Seeed XIAO ESP32-S3 Plus, or a XIAO ESP32-S3 Sense for camera video |
-| Sensors | MPU-6050 IMU (GY-521 module), VL53L0X ToF rangefinder facing down (GY-530 module) |
-| Power | 1S LiPo with PH2.0 plug, TPS63020 buck-boost, slide power switch |
+| Flight controller | 40 x 40 mm, 2 layers, suspended under the frame on silicone grommets |
+| MCU | Seeed XIAO ESP32-S3 Plus, or XIAO ESP32-S3 Sense for camera video |
+| Sensors | MPU-6050 IMU (GY-521 module), downward VL53L0X time-of-flight rangefinder (GY-530 module) |
+| Power | 1S LiPo with PH2.0 connector, TPS63020 buck-boost converter, slide power switch |
 | Motors | 4 x 720 coreless brushed motors, 55 mm propellers, low-side MOSFET drivers |
-| Link | WiFi access point on the drone, Bluetooth advertising so the app can find it |
+| Link | WiFi access point on the drone, Bluetooth advertising for discovery |
 | Flight time | about 1.5-2 minutes on a 400 mAh 20C battery |
 
-Firmware features: angle mode, ToF altitude hold that follows the surface below, button take-off and auto-landing, velocity mode, a per-motor trim measured once and kept in flash, an on-board blackbox log, Bluetooth advertising so the app can find nearby drones, and camera video to the app with a XIAO ESP32-S3 Sense.
-
-## The app
+## Companion app
 
 <img src="docs/images/app-flying.jpg" width="720" alt="The SparrowFlight app while flying: the climb and yaw stick on the left, the roll and pitch stick on the right, the height of 62 cm in the middle, the Land button and the STOP button">
 
-SparrowFlight lists nearby drones over Bluetooth, joins the chosen drone's WiFi with one tap, and checks the drone before the sticks appear. It flies with button take-off and landing or with the thrust stick setting the hold height, shows the drone's camera behind the sticks, and edits the flight parameters. A console and a flight log for every connection help with tuning. The app collects no personal data.
+SparrowFlight for iPhone discovers nearby drones over Bluetooth, joins the selected drone's WiFi network, and checks the drone before enabling the controls. It offers button take-off and landing or thrust-stick height control, shows the drone's camera behind the sticks, and edits flight parameters. A console and per-connection flight logs support tuning. The app collects no personal data.
 
-See [software/README.md](software/README.md) for the full guide, and the [privacy policy](software/PRIVACY.md).
+Documentation: [app guide](software/README.md) and [privacy policy](software/PRIVACY.md).
 
-## Repository
+## Repository layout
 
 | Folder | Contents |
 |---|---|
-| [`hardware/`](hardware/) | the frame and the flight controller (to be published) |
-| [`firmware/`](firmware/) | the flight firmware (to be published) |
-| [`software/`](software/) | the SparrowFlight app: guide and privacy policy (the app itself is not open source) |
-| [`docs/`](docs/) | photos and a test flight video |
+| [`hardware/`](hardware/) | frame and flight controller (to be published) |
+| [`firmware/`](firmware/) | flight firmware (to be published) |
+| [`software/`](software/) | guide and privacy policy of the SparrowFlight app (the app itself is not open source) |
+| [`docs/`](docs/) | photos and the demo video |
 
-## Support
+## Support and contributing
 
-Questions and problem reports: see [SUPPORT.md](SUPPORT.md).
+For questions and problem reports, see [SUPPORT.md](SUPPORT.md). How to contribute is described in [CONTRIBUTING.md](CONTRIBUTING.md), and everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Safety
 
-LiPo batteries can catch fire when damaged, shorted or overcharged; charge them with a proper charger and never leave them unattended. Spinning propellers cut. Remove the propellers when you work on the drone with the battery connected, fly away from people, and follow your local drone regulations. The designs and software come with no warranty.
+LiPo batteries can catch fire when damaged, short-circuited or overcharged; charge them with a suitable charger and never leave them unattended. Spinning propellers can cause injury. Remove the propellers before working on the drone with the battery connected, fly away from people, and follow local drone regulations. The designs and software are provided without warranty.
 
-## Name
+## License
 
-The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not covered by the licences in this repository. Once the designs are published, you may build, modify and share Sparrow under their licences, but do not present your version as the official one.
+The documentation and photos are licensed under CC BY-SA 4.0. The frame (CC BY-NC-SA 4.0, adapted from [LiteWing](https://github.com/Circuit-Digest/LiteWing)), the flight controller (CERN-OHL-S-2.0) and the firmware (GPL-3.0) will be released under their own licences. The iOS app is not open source. See [LICENSE.md](LICENSE.md).
+
+The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not covered by these licences. Once the designs are published, derived versions may be built and shared under their licences, but must not be presented as official.
