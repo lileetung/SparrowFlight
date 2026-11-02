@@ -10,7 +10,7 @@
 
 SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機平台。它的無人機 Sparrow 由現成模組（Seeed XIAO ESP32-S3、GY-521 IMU、GY-530 ToF 測距模組）、可由一般 PCB 廠製作與組裝的 2 層飛控板、從單片 100 × 100 mm 碳纖維板切割的機架，以及常見的 720 空心杯馬達組成，適合想要親手組裝、理解並修改小型無人機的創客、學生與教育工作者。
 
-機架、飛控板與韌體正在整理，將以開放授權釋出，詳見[專案進度](#專案進度)。Sparrow 以 iPhone 上的配套 App「SparrowFlight」操控。
+機架、飛控板與韌體正在整理，將以開放授權釋出，詳見[專案進度](#專案進度)。Sparrow 以 iOS App「SparrowFlight」操控。
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow 正面：碳纖維機架、四顆空心杯馬達和 55 mm 槳，1S 電池綁在機架上方">

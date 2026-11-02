@@ -10,7 +10,7 @@
 
 SparrowFlight is a micro quadcopter platform designed to be built from widely available parts. Its drone, Sparrow, combines off-the-shelf modules (a Seeed XIAO ESP32-S3, a GY-521 IMU and a GY-530 time-of-flight sensor) with a two-layer flight controller that standard PCB services can manufacture and assemble, a carbon-fibre frame cut from a single 100 x 100 mm sheet, and common 720 coreless motors. It is intended for makers, students and educators who want a small drone they can build, understand and modify.
 
-The frame, the flight controller and the firmware are being prepared for release under open licences; see [Project status](#project-status). Sparrow is flown from an iPhone with the companion app, SparrowFlight.
+The frame, the flight controller and the firmware are being prepared for release under open licences; see [Project status](#project-status). Sparrow is flown with the iOS app SparrowFlight.
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow from the front: carbon-fibre frame, four coreless motors with 55 mm propellers, and a 1S battery strapped on top">
