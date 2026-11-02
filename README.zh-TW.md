@@ -4,7 +4,7 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">以現成零件組裝的小型四軸無人機</p>
+<p align="center">打造你的小型四軸無人機</p>
 
 <p align="center"><a href="README.md">English</a> | 繁體中文</p>
 

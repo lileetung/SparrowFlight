@@ -4,7 +4,7 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">A micro quadcopter built from off-the-shelf parts</p>
+<p align="center">Build your own micro quadcopter</p>
 
 <p align="center">English | <a href="README.zh-TW.md">繁體中文</a></p>
 
