@@ -55,30 +55,17 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 | 連線 | 無人機端 WiFi 熱點，藍牙廣播供搜尋 |
 | 飛行時間 | 400 mAh 20C 電池約 1.5–2 分鐘 |
 
-## 配套 App
+## APP
 
 <img src="docs/images/app-flying.jpg" width="720" alt="SparrowFlight App 飛行中的畫面：左邊是升降和轉向搖桿，右邊是左右和前後搖桿，中間是高度 62 cm，下方是降落和緊停按鈕">
 
-iPhone 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人機的 WiFi 網路，並在開放操控前檢查無人機狀態。支援按鈕起飛與降落，或以推力搖桿控制高度；可在搖桿後方顯示機上相機畫面，並編輯飛行參數。主控台與每次連線的飛行紀錄可協助調校。App 不收集任何個人資料。
+iOS 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人機的 WiFi 網路，並在開放操控前檢查無人機狀態。支援按鈕起飛與降落，或以推力搖桿控制高度；可在搖桿後方顯示機上相機畫面，並編輯飛行參數。主控台與每次連線的飛行紀錄可協助調校。App 不收集任何個人資料。
 
 文件：[App 說明](software/README.md)（英文）與[隱私權政策](software/PRIVACY.md)（英文）。
-
-## Repo 結構
-
-| 資料夾 | 內容 |
-|---|---|
-| [`hardware/`](hardware/) | 機架與飛控板（尚未公開） |
-| [`firmware/`](firmware/) | 飛控韌體（尚未公開） |
-| [`software/`](software/) | SparrowFlight App 的說明與隱私權政策（App 本身不開源） |
-| [`docs/`](docs/) | 照片與展示影片 |
 
 ## 支援與貢獻
 
 問題與回報請見 [SUPPORT.md](SUPPORT.md)（英文）。參與方式請見 [CONTRIBUTING.md](CONTRIBUTING.md)（英文），所有參與者都應遵守[行為準則](CODE_OF_CONDUCT.md)（英文）。
-
-## 安全
-
-鋰聚電池在受損、短路或過度充電時可能起火，請使用合適的充電器，充電時勿離開。旋轉中的螺旋槳可能造成傷害：接著電池維修無人機前請先拆下螺旋槳，遠離人群飛行，並遵守當地的無人機法規。設計與軟體不提供任何保固。
 
 ## 授權
 

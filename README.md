@@ -55,30 +55,17 @@ The frame, the flight controller and the firmware will be published in this repo
 | Link | WiFi access point on the drone, Bluetooth advertising for discovery |
 | Flight time | about 1.5-2 minutes on a 400 mAh 20C battery |
 
-## Companion app
+## App
 
 <img src="docs/images/app-flying.jpg" width="720" alt="The SparrowFlight app while flying: the climb and yaw stick on the left, the roll and pitch stick on the right, the height of 62 cm in the middle, the Land button and the STOP button">
 
-SparrowFlight for iPhone discovers nearby drones over Bluetooth, joins the selected drone's WiFi network, and checks the drone before enabling the controls. It offers button take-off and landing or thrust-stick height control, shows the drone's camera behind the sticks, and edits flight parameters. A console and per-connection flight logs support tuning. The app collects no personal data.
+SparrowFlight for iOS discovers nearby drones over Bluetooth, joins the selected drone's WiFi network, and checks the drone before enabling the controls. It offers button take-off and landing or thrust-stick height control, shows the drone's camera behind the sticks, and edits flight parameters. A console and per-connection flight logs support tuning. The app collects no personal data.
 
 Documentation: [app guide](software/README.md) and [privacy policy](software/PRIVACY.md).
-
-## Repository layout
-
-| Folder | Contents |
-|---|---|
-| [`hardware/`](hardware/) | frame and flight controller (to be published) |
-| [`firmware/`](firmware/) | flight firmware (to be published) |
-| [`software/`](software/) | guide and privacy policy of the SparrowFlight app (the app itself is not open source) |
-| [`docs/`](docs/) | photos and the demo video |
 
 ## Support and contributing
 
 For questions and problem reports, see [SUPPORT.md](SUPPORT.md). How to contribute is described in [CONTRIBUTING.md](CONTRIBUTING.md), and everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## Safety
-
-LiPo batteries can catch fire when damaged, short-circuited or overcharged; charge them with a suitable charger and never leave them unattended. Spinning propellers can cause injury. Remove the propellers before working on the drone with the battery connected, fly away from people, and follow local drone regulations. The designs and software are provided without warranty.
 
 ## License
 
