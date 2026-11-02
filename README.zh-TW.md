@@ -55,6 +55,24 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 | 連線 | 無人機端 WiFi 熱點，藍牙廣播供搜尋 |
 | 飛行時間 | 400 mAh 20C 電池約 1.5–2 分鐘 |
 
+## 零件
+
+Sparrow 使用一般電子零件與模型零件通路都買得到的零件；飛控板與機架依設計檔製作，見[專案進度](#專案進度)。
+
+| 零件 | 數量 | 用途 |
+|---|---|---|
+| [Seeed XIAO ESP32-S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)（或 XIAO ESP32-S3 Sense），附 WiFi 天線 | 1 | 飛行電腦：讀取感測器、執行控制迴圈、驅動馬達，並提供 WiFi 熱點與藍牙；Sense 版另有朝下的相機 |
+| GY-521 模組（[MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)） | 1 | 六軸 IMU（陀螺儀與加速度計），用於姿態估測 |
+| GY-530 模組（[VL53L0X](https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html)） | 1 | 朝下的 ToF 測距，用於定高 |
+| 720 空心杯有刷馬達，正轉、反轉各 2 顆 | 4 | 動力 |
+| 55 mm 螺旋槳，適用 1 mm 馬達軸 | 2 對 | 正槳、反槳各 2 片，建議多備幾片 |
+| 1S 鋰聚電池，400 mAh，PH2.0 接頭 | 1 | 電源，約可飛行 1.5–2 分鐘 |
+| 馬達橡膠套、M2 螺絲、尼龍防鬆螺帽、尼龍墊片與矽膠防震球 | 各 4 | 固定馬達與飛控板 |
+| 飛控板，40 × 40 mm | 1 | 向 PCB 廠下單，由廠商焊好電源與馬達驅動電路 |
+| 碳纖維機架，1.5 mm，100 × 100 mm | 1 | 依單一 DXF 檔 CNC 切割 |
+
+完整材料清單將隨硬體設計檔一起公開。
+
 ## APP
 
 <img src="docs/images/app-flying.jpg" width="720" alt="SparrowFlight App 飛行中的畫面：左邊是升降和轉向搖桿，右邊是左右和前後搖桿，中間是高度 62 cm，下方是降落和緊停按鈕">

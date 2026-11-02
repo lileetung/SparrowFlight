@@ -55,6 +55,24 @@ The frame, the flight controller and the firmware will be published in this repo
 | Link | WiFi access point on the drone, Bluetooth advertising for discovery |
 | Flight time | about 1.5-2 minutes on a 400 mAh 20C battery |
 
+## Parts
+
+Sparrow is built from parts sold by common electronics and hobby suppliers. The flight controller board and the frame are made from the design files; see [Project status](#project-status).
+
+| Part | Qty | Role |
+|---|---|---|
+| [Seeed XIAO ESP32-S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) (or XIAO ESP32-S3 Sense), with its WiFi antenna | 1 | flight computer: reads the sensors, runs the control loop, drives the motors, and hosts the WiFi access point and Bluetooth; the Sense adds a downward camera |
+| GY-521 module ([MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)) | 1 | 6-axis IMU (gyroscope and accelerometer) for the attitude estimate |
+| GY-530 module ([VL53L0X](https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html)) | 1 | downward time-of-flight rangefinder for height hold |
+| 720 coreless brushed motor, 2 clockwise and 2 counter-clockwise | 4 | propulsion |
+| 55 mm propellers for 1 mm shafts | 2 pairs | 2 clockwise and 2 counter-clockwise; spares recommended |
+| 1S LiPo, 400 mAh, PH2.0 plug | 1 | power, about 1.5-2 minutes of flight |
+| Rubber motor collars, M2 screws, nylon lock nuts, nylon washers and silicone grommets | 4 each | motor and flight controller mounting |
+| Flight controller board, 40 x 40 mm | 1 | ordered from a PCB service, which assembles the power stage and the motor drivers |
+| Carbon-fibre frame, 1.5 mm, 100 x 100 mm | 1 | CNC-milled from a single DXF |
+
+The complete bill of materials will be published with the hardware.
+
 ## App
 
 <img src="docs/images/app-flying.jpg" width="720" alt="The SparrowFlight app while flying: the climb and yaw stick on the left, the roll and pitch stick on the right, the height of 62 cm in the middle, the Land button and the STOP button">
