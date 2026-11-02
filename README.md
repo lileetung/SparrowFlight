@@ -6,6 +6,8 @@
 
 <p align="center">An open-source micro quadcopter, and the iPhone app that flies it</p>
 
+<p align="center">English | <a href="README.zh-TW.md">繁體中文</a></p>
+
 SparrowFlight is the project behind **Sparrow**, a 100 mm carbon-fibre quadcopter with its own 40 x 40 mm flight controller built on a Seeed XIAO ESP32-S3. Sparrow is flown over WiFi from an iPhone with the **SparrowFlight** app.
 
 <p align="center">
@@ -72,4 +74,4 @@ LiPo batteries can catch fire when damaged, shorted or overcharged; charge them 
 
 ## Name
 
-The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not covered by the licences in this repository.
+The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not covered by the licences in this repository. Once the designs are published, you may build, modify and share Sparrow under their licences, but do not present your version as the official one.
