@@ -4,11 +4,11 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">An open-source micro quadcopter, and the iPhone app that flies it</p>
+<p align="center">Build your own micro quadcopter from parts that are easy to get</p>
 
 <p align="center">English | <a href="README.zh-TW.md">繁體中文</a></p>
 
-SparrowFlight is the project behind **Sparrow**, a 100 mm carbon-fibre quadcopter with its own 40 x 40 mm flight controller built on a Seeed XIAO ESP32-S3. Sparrow is flown over WiFi from an iPhone with the **SparrowFlight** app.
+SparrowFlight is an open-source project for building a small quadcopter yourself, from parts that are easy to get. The drone is called **Sparrow**. Its flight controller is a 40 x 40 mm two-layer board: a PCB service such as JLCPCB makes it and assembles the power stage and the motor drivers, and you add three modules you can buy anywhere, a Seeed XIAO ESP32-S3, a GY-521 (MPU-6050 IMU) and a GY-530 (VL53L0X ToF rangefinder). The rest are common hobby parts: four 720 coreless motors with 55 mm propellers, a 1S LiPo, and a carbon-fibre frame cut from one 100 x 100 mm sheet. Sparrow is flown over WiFi from an iPhone with the **SparrowFlight** app.
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow from the front: carbon-fibre frame, four coreless motors with 55 mm propellers, and a 1S battery strapped on top">
@@ -25,12 +25,12 @@ A test flight on a rooftop in October 2026: choosing the drone in the app, joini
 
 | Part | Version | Status |
 |---|---|---|
-| SparrowFlight, the iPhone app | 1.0.0 | coming to the App Store; see [software/](software/README.md) |
 | Frame | v1.0 | flying; files being prepared for [hardware/](hardware/README.md) |
 | Flight controller | v1.0 | flying; files being prepared for [hardware/](hardware/README.md) |
 | Firmware | 1.0.0 | flying; source being prepared for [firmware/](firmware/README.md) |
+| SparrowFlight, the iPhone app | 1.0.0 | coming to the App Store; see [software/](software/README.md) |
 
-The frame, the flight controller and the firmware will be published in this repository under the licences listed in [LICENSE.md](LICENSE.md).
+The frame, the flight controller and the firmware will be published in this repository, with their parts lists and build instructions, under the licences listed in [LICENSE.md](LICENSE.md).
 
 ## What it is
 
@@ -59,9 +59,9 @@ See [software/README.md](software/README.md) for the full guide, and the [privac
 
 | Folder | Contents |
 |---|---|
-| [`software/`](software/) | the SparrowFlight app: guide and privacy policy (the app itself is not open source) |
 | [`hardware/`](hardware/) | the frame and the flight controller (to be published) |
 | [`firmware/`](firmware/) | the flight firmware (to be published) |
+| [`software/`](software/) | the SparrowFlight app: guide and privacy policy (the app itself is not open source) |
 | [`docs/`](docs/) | photos and a test flight video |
 
 ## Support

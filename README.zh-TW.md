@@ -4,11 +4,11 @@
 
 <h1 align="center">SparrowFlight</h1>
 
-<p align="center">開源的小型四軸無人機，和遙控它的 iPhone App</p>
+<p align="center">用容易買到的零件，自己組一台小型四軸無人機</p>
 
 <p align="center"><a href="README.md">English</a> | 繁體中文</p>
 
-SparrowFlight 是 **Sparrow** 背後的專案：一台 100 mm 的碳纖維四軸無人機，加上一片自己設計、以 Seeed XIAO ESP32-S3 為核心的 40 × 40 mm 飛控板。Sparrow 用 iPhone 上的 **SparrowFlight** App 透過 WiFi 遙控。
+SparrowFlight 是一個開源專案，讓大家用容易買到的零件，自己組一台小型四軸無人機。這台無人機叫 **Sparrow**。飛控是一片 40 × 40 mm 的 2 層板：交給 JLCPCB 這類 PCB 廠製作，並焊好電源和馬達驅動，你再裝上三個到處都買得到的模組：Seeed XIAO ESP32-S3、GY-521（MPU-6050 IMU）和 GY-530（VL53L0X ToF 測距）。其他都是常見的模型零件：四顆 720 空心杯馬達配 55 mm 槳、1S 鋰聚電池，以及從一片 100 × 100 mm 碳纖維板切出來的機架。Sparrow 用 iPhone 上的 **SparrowFlight** App 透過 WiFi 遙控。
 
 <p align="center">
   <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow 正面：碳纖維機架、四顆空心杯馬達和 55 mm 槳，1S 電池綁在機架上方">
@@ -25,12 +25,12 @@ SparrowFlight 是 **Sparrow** 背後的專案：一台 100 mm 的碳纖維四軸
 
 | 部分 | 版本 | 進度 |
 |---|---|---|
-| SparrowFlight iPhone App | 1.0.0 | 即將上架 App Store，見 [software/](software/README.md)（英文） |
 | 機架 | v1.0 | 已經在飛，檔案整理中，會放在 [hardware/](hardware/README.md) |
 | 飛控板 | v1.0 | 已經在飛，檔案整理中，會放在 [hardware/](hardware/README.md) |
 | 韌體 | 1.0.0 | 已經在飛，原始碼整理中，會放在 [firmware/](firmware/README.md) |
+| SparrowFlight iPhone App | 1.0.0 | 即將上架 App Store，見 [software/](software/README.md)（英文） |
 
-機架、飛控板和韌體會公開在這個 repo，各自的授權見 [LICENSE.md](LICENSE.md)（英文）。
+機架、飛控板和韌體會連同零件清單和組裝說明公開在這個 repo，各自的授權見 [LICENSE.md](LICENSE.md)（英文）。
 
 ## 規格
 
@@ -59,9 +59,9 @@ SparrowFlight 用藍牙列出附近的無人機，點一下就加入它的 WiFi�
 
 | 資料夾 | 內容 |
 |---|---|
-| [`software/`](software/) | SparrowFlight App 的說明和隱私權政策（App 本身不開源） |
 | [`hardware/`](hardware/) | 機架和飛控板（尚未公開） |
 | [`firmware/`](firmware/) | 飛控韌體（尚未公開） |
+| [`software/`](software/) | SparrowFlight App 的說明和隱私權政策（App 本身不開源） |
 | [`docs/`](docs/) | 照片和試飛影片 |
 
 ## 支援
