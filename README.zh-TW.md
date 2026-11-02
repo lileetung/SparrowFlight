@@ -29,7 +29,7 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 
 <a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow 從頂樓起飛、懸停，用 iPhone 遙控"></a>
 
-2026 年 10 月的試飛：在 App 中選擇無人機、加入其 WiFi 網路、起飛並懸停。完整影片（36 秒）：[docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
+完整影片（36 秒）：[docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
 
 ## 專案進度
 

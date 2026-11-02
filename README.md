@@ -29,7 +29,7 @@ The frame, the flight controller and the firmware are being prepared for release
 
 <a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow taking off from a rooftop and hovering, flown from an iPhone"></a>
 
-A test flight in October 2026: selecting the drone in the app, joining its WiFi network, taking off and hovering. Full clip (36 s): [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
+Full clip (36 s): [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
 
 ## Project status
 
