@@ -38,7 +38,7 @@ Full clip (36 s): [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
 | Frame | 1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
 | Flight controller | 1.0 | flight-tested; design files in preparation for [hardware/](hardware/README.md) |
 | Firmware | 1.0.0 | flight-tested; source in preparation for [firmware/](firmware/README.md) |
-| SparrowFlight iOS app | 1.0.0 | awaiting App Store release; see [software/](software/README.md) |
+| SparrowFlight iOS app | 1.0.0 | released on the [App Store](https://apps.apple.com/app/id6829419743); see [software/](software/README.md) |
 
 The frame, the flight controller and the firmware will be published in this repository with their bills of materials and build instructions, under the licences listed in [LICENSE.md](LICENSE.md).
 
@@ -79,7 +79,7 @@ The complete bill of materials will be published with the hardware.
 
 SparrowFlight for iOS discovers nearby drones over Bluetooth, joins the selected drone's WiFi network, and checks the drone before enabling the controls. It offers button take-off and landing or thrust-stick height control, shows the drone's camera behind the sticks, and edits flight parameters. A console and per-connection flight logs support tuning. The app collects no personal data.
 
-Documentation: [app guide](software/README.md) and [privacy policy](software/PRIVACY.md).
+Available on the [App Store](https://apps.apple.com/app/id6829419743). Documentation: [app guide](software/README.md) and [privacy policy](software/PRIVACY.md).
 
 ## Support and contributing
 

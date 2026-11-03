@@ -38,7 +38,7 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 | 機架 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
 | 飛控板 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
 | 韌體 | 1.0.0 | 已完成飛行測試，原始碼整理中，將放在 [firmware/](firmware/README.md) |
-| SparrowFlight iOS App | 1.0.0 | 等待 App Store 上架，見 [software/](software/README.md)（英文） |
+| SparrowFlight iOS App | 1.0.0 | 已在 [App Store](https://apps.apple.com/app/id6829419743) 上架，見 [software/](software/README.md)（英文） |
 
 機架、飛控板與韌體將連同材料清單與組裝說明公開於本 repo，授權見 [LICENSE.md](LICENSE.md)（英文）。
 
@@ -79,7 +79,7 @@ Sparrow 使用一般電子零件與模型零件通路都買得到的零件；飛
 
 iOS 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人機的 WiFi 網路，並在開放操控前檢查無人機狀態。支援按鈕起飛與降落，或以推力搖桿控制高度；可在搖桿後方顯示機上相機畫面，並編輯飛行參數。主控台與每次連線的飛行紀錄可協助調校。App 不收集任何個人資料。
 
-文件：[App 說明](software/README.md)（英文）與[隱私權政策](software/PRIVACY.md)（英文）。
+可從 [App Store](https://apps.apple.com/app/id6829419743) 下載。文件：[App 說明](software/README.md)（英文）與[隱私權政策](software/PRIVACY.md)（英文）。
 
 ## 支援與貢獻
 

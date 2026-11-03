@@ -4,7 +4,7 @@ SparrowFlight is the iPhone app that flies Sparrow over WiFi.
 
 The app is distributed through the App Store. Its source code is not part of this repository.
 
-**Download:** coming to the App Store.
+**Download:** [SparrowFlight on the App Store](https://apps.apple.com/app/id6829419743).
 
 ## Requirements
 
