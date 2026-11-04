@@ -10,12 +10,14 @@
 
 SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機平台。它的無人機 Sparrow 由現成模組（Seeed XIAO ESP32-S3、GY-521 IMU、GY-530 ToF 測距模組）、可由一般 PCB 廠製作與組裝的 2 層飛控板、從單片 100 × 100 mm 碳纖維板切割的機架，以及常見的 720 空心杯馬達組成，適合想要親手組裝、理解並修改小型無人機的創客、學生與教育工作者。
 
-機架、飛控板與韌體正在整理，將以開放授權釋出，詳見[專案進度](#專案進度)。Sparrow 以 iOS App「SparrowFlight」操控。
+飛控板（CERN-OHL-S-2.0）與韌體（GPL-3.0-or-later）為開源；機架改自 LiteWing，因此以非商業授權 CC BY-NC-SA 4.0 公開。設計檔、原始碼與組裝說明見 [hardware/](hardware/README.md) 與 [firmware/](firmware/README.md)。Sparrow 以 iOS App「SparrowFlight」操控。
 
 <p align="center">
-  <img src="docs/images/sparrow-front.jpg" width="380" alt="Sparrow 正面：碳纖維機架、四顆空心杯馬達和 55 mm 槳，1S 電池綁在機架上方">
-  <img src="docs/images/sparrow-back.jpg" width="380" alt="Sparrow 底部：XIAO ESP32-S3 飛控板和朝下的 ToF 感測器">
+  <img src="docs/images/sparrow-3d-top.png" width="380" alt="Sparrow 3D 渲染圖，從上方看：碳纖維機架和四支卡扣式腳架，四顆空心杯馬達裝在 O 型雙層護線圈裡、配 55 mm 槳，飛控板掛在機架下方">
+  <img src="docs/images/sparrow-3d-bottom.png" width="380" alt="Sparrow 3D 渲染圖，從下方看：飛控板用四顆矽膠防震球掛在機架下，XIAO ESP32-S3 和 GY-530 ToF 感測器朝向地面">
 </p>
+
+<p align="center"><sub>3D 渲染圖，未包含飛控板與機架之間的 GY-521、天線、電池與電線。實機照片見 <a href="docs/photos/README.md">docs/photos</a>。</sub></p>
 
 ## 特色
 
@@ -30,49 +32,34 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 
 完整影片（36 秒）：[docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
 
-## 專案進度
+## 規格與零件
 
-| 元件 | 版本 | 狀態 |
+Sparrow 使用一般電子零件與模型零件通路買得到的零件。飛控板由 JLCPCB 依 [hardware/flight-controller/](hardware/flight-controller/README.md) 的檔案製作並焊接，機架由碳纖維 CNC 加工廠依 [DXF](hardware/frame/README.md) 切割。
+
+| 零件 | 規格 | 購買 |
 |---|---|---|
-| 機架 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
-| 飛控板 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
-| 韌體 | 1.0.0 | 已完成飛行測試，原始碼整理中，將放在 [firmware/](firmware/README.md) |
-| SparrowFlight iOS App | 1.0.0 | 已在 [App Store](https://apps.apple.com/app/id6829419743) 上架，見 [software/](software/README.md) |
+| 機架 | 100 × 100 mm、1.5 mm 3K 碳纖維，四支卡扣式腳架，從單一 DXF 切割 | 蝦皮（碳纖維 CNC 加工） |
+| 飛控板 | 40 × 40 mm、2 層；TPS63020 升降壓、滑動電源開關與四組低側 MOSFET 馬達驅動；以矽膠防震球掛在機架下方 | JLCPCB |
+| [Seeed XIAO ESP32-S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) | 飛行電腦，附 WiFi 天線：控制迴圈、馬達輸出、WiFi 熱點與藍牙；接上 XIAO ESP32-S3 Sense 的相機擴充板可加裝朝下相機 | 蝦皮 |
+| GY-521（[MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)） | 六軸 IMU（陀螺儀與加速度計），用於姿態估算 | 今華電子 |
+| GY-530（[VL53L0X](https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html)） | 朝下的 ToF 測距，用於定高 | 今華電子 |
+| 720 空心杯有刷馬達 | 7 × 20 mm、軸徑 1 mm；兩顆順時針、兩顆逆時針 | 今華電子 |
+| 槳 | 55 mm、孔徑 1 mm，正反槳成對 | 蝦皮 |
+| 電池 | 1S LiPo 400 mAh 20C、PH2.0 插頭；可飛約 3.5–4 分鐘 | 蝦皮 |
+| 固定件 | O 型雙層護線圈（固定馬達，內徑 7 mm）、M2 × 14 mm 螺絲、M2 尼龍防鬆螺帽、2.6 × 5 × 1 mm 尼龍墊片、M2 矽膠防震球、電池綁帶（寬 12 mm 以內） | 蝦皮 |
 
-機架、飛控板與韌體將連同材料清單與組裝說明公開於本 repo，授權見 [LICENSE.md](LICENSE.md)。
+賣場：[JLCPCB](https://jlcpcb.com/)、[今華電子](https://www.jin-hua.com.tw/)、[蝦皮](https://shopee.tw/)，後兩者在台灣。
 
-## 規格
+## 自己做一台
 
-| | |
-|---|---|
-| 機架 | 100 × 100 mm，1.5 mm 碳纖維，卡扣式起落架 |
-| 飛控板 | 40 × 40 mm、2 層板，以矽膠防震球懸吊於機架下方 |
-| 主控 | Seeed XIAO ESP32-S3 Plus，或可傳輸相機畫面的 XIAO ESP32-S3 Sense |
-| 感測器 | MPU-6050 IMU（GY-521 模組）、朝下的 VL53L0X ToF 測距（GY-530 模組） |
-| 電源 | 1S 鋰聚電池（PH2.0 接頭）、TPS63020 升降壓轉換器、滑動電源開關 |
-| 馬達 | 4 顆 720 空心杯有刷馬達、55 mm 槳、低側 MOSFET 驅動 |
-| 連線 | 無人機端 WiFi 熱點，藍牙廣播供搜尋 |
-| 飛行時間 | 400 mAh 20C 電池約 3.5–4 分鐘 |
+1. **機架：** 把 [DXF](hardware/frame/README.md) 交給碳纖維 CNC 加工廠，指定 1.5 mm 3K 碳纖維板。
+2. **飛控板：** 用 [Gerber、BOM 與貼片座標檔](hardware/flight-controller/README.md#ordering-from-jlcpcb)向 JLCPCB 下單，含焊接。
+3. **零件：** 照上表購買模組、馬達、槳、電池與固定件。
+4. **組裝：** 把模組和馬達焊到飛控板上（[飛控板](hardware/flight-controller/README.md#assembly)），再把馬達和飛控板裝到機架（[機架](hardware/frame/README.md#assembly)）。
+5. **韌體：** 用 PlatformIO 編譯，透過 USB 燒錄（[韌體](firmware/README.md#build-and-flash)）。
+6. **飛行：** 安裝 [SparrowFlight](https://apps.apple.com/app/id6829419743)，照 [App 說明](software/README.md)操作。
 
-## 零件
-
-Sparrow 使用一般電子零件與模型零件通路都買得到的零件；飛控板與機架依設計檔製作，見[專案進度](#專案進度)。
-
-| 零件 | 數量 | 用途 |
-|---|---|---|
-| [Seeed XIAO ESP32-S3 Plus](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)（或 XIAO ESP32-S3 Sense），附 WiFi 天線 | 1 | 飛行電腦：讀取感測器、執行控制迴圈、驅動馬達，並提供 WiFi 熱點與藍牙；Sense 版另有朝下的相機 |
-| GY-521 模組（[MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)） | 1 | 六軸 IMU（陀螺儀與加速度計），用於姿態估測 |
-| GY-530 模組（[VL53L0X](https://www.st.com/en/imaging-and-photonics-solutions/vl53l0x.html)） | 1 | 朝下的 ToF 測距，用於定高 |
-| 720 空心杯有刷馬達，正轉、反轉各 2 顆 | 4 | 動力 |
-| 55 mm 螺旋槳，適用 1 mm 馬達軸 | 2 對 | 正槳、反槳各 2 片，建議多備幾片 |
-| 1S 鋰聚電池，400 mAh，PH2.0 接頭 | 1 | 電源，約可飛行 3.5–4 分鐘 |
-| O 型雙層護線圈、M2 螺絲、尼龍防鬆螺帽、尼龍墊片與矽膠防震球 | 各 4 | 固定馬達與飛控板 |
-| 飛控板，40 × 40 mm | 1 | 向 PCB 廠下單，由廠商焊好電源與馬達驅動電路 |
-| 碳纖維機架，1.5 mm，100 × 100 mm | 1 | 依單一 DXF 檔 CNC 切割 |
-
-完整材料清單將隨硬體設計檔一起公開。
-
-## APP
+## App
 
 <img src="docs/images/app-flying.jpg" width="720" alt="SparrowFlight App 飛行中的畫面：左邊是升降和轉向搖桿，右邊是左右和前後搖桿，中間是高度 62 cm，下方是降落和緊停按鈕">
 
@@ -86,6 +73,6 @@ iOS 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人�
 
 ## 授權
 
-文件與照片採用 CC BY-SA 4.0。機架（CC BY-NC-SA 4.0，改自 [LiteWing](https://github.com/Circuit-Digest/LiteWing)）、飛控板（CERN-OHL-S-2.0）與韌體（GPL-3.0）將以各自的授權釋出。詳見 [LICENSE.md](LICENSE.md)。
+機架採用 CC BY-NC-SA 4.0（改自 [LiteWing](https://github.com/Circuit-Digest/LiteWing)），飛控板採用 CERN-OHL-S-2.0，韌體採用 GPL-3.0-or-later，各自資料夾內的說明文件與圖片也採用同一授權。其餘文件與照片採用 CC BY-SA 4.0。詳見 [LICENSE.md](LICENSE.md)。
 
-「SparrowFlight」、「Sparrow」名稱與麻雀 logo 不在上述授權範圍內。設計公開後，可依授權製作並分享衍生版本，但不得宣稱為官方版本。
+「SparrowFlight」、「Sparrow」名稱與麻雀 logo 不在上述授權範圍內。可依授權製作並分享衍生版本，但不得宣稱為官方版本。

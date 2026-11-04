@@ -32,6 +32,18 @@ body:
       description: Shown at the top of the screen once connected.
       placeholder: "1.0.0"
   - type: input
+    id: board
+    attributes:
+      label: Flight controller version
+      description: If you built your own Sparrow, the version printed on the top of the board.
+      placeholder: "v1.0"
+  - type: textarea
+    id: get
+    attributes:
+      label: Output of get
+      description: If you built your own Sparrow, connect it over USB, open the monitor (see firmware/README.md, Build and flash) and paste what `get` prints.
+      render: text
+  - type: input
     id: device
     attributes:
       label: iPhone model and iOS version

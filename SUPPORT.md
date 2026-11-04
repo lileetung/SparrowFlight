@@ -4,7 +4,9 @@
 
 [software/README.md](software/README.md) covers connecting, the check after connecting, the flight modes, the controls, the camera, the parameters and the flight logs.
 
-The frame, the flight controller and the firmware will be documented in [hardware/](hardware/README.md) and [firmware/](firmware/README.md) when they are published.
+## Help with building
+
+[hardware/](hardware/README.md) covers ordering and assembling the frame and the flight controller. [firmware/](firmware/README.md) covers building and flashing the firmware, the console commands, the parameters and the calibration.
 
 ## Reporting a problem
 

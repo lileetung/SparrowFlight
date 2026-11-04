@@ -10,7 +10,7 @@ The app does not collect personal data. It has no accounts, no servers, no adver
 
 ## What the app uses on the phone
 
-- **Bluetooth**, to list nearby Sparrow drones. The list comes from what each drone broadcasts: its ID, firmware version, battery and signal strength. The app does not connect to drones or send them anything over Bluetooth.
+- **Bluetooth**, to list nearby Sparrow drones. The list comes from what each drone broadcasts (its ID, firmware version and battery) and the signal strength the phone measures. The app does not connect to drones or send them anything over Bluetooth.
 - **WiFi**, to join the WiFi network of the drone you pick. iOS asks you first.
 - **Local network**, to fly the drone over its WiFi: the app sends stick movements and the commands you choose, and receives the drone's flight data and camera picture.
 

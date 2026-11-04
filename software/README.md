@@ -17,7 +17,7 @@ The app is distributed through the App Store. Its source code is not part of thi
 - List of nearby drones over Bluetooth, and one-tap joining of the drone's WiFi
 - A check of the drone after connecting, before the controls appear
 - Two flight modes, chosen in Settings: button take-off and landing (velocity mode), or thrust with the stick setting the hold height
-- The camera picture behind the sticks, on a drone built with a XIAO ESP32-S3 Sense
+- The camera picture behind the sticks, on a drone with the camera expansion board of a XIAO ESP32-S3 Sense
 - Live telemetry and events: height, state, battery, link
 - Flight parameters with their ranges, defaults and storage, read and changed from the app
 - A console for firmware commands
@@ -73,7 +73,7 @@ The take-off height and the lowest and highest hold heights are parameters (Sett
 
 ## Camera
 
-A drone built with a XIAO ESP32-S3 Sense streams its camera over UDP port 81, and the app shows the picture behind the sticks: fitted to the screen without cropping and dimmed, so the lines and text on top stay readable. After 1.5 s without a new frame the picture is cleared, so a frozen frame is never taken for live video. The camera on the drone runs only while the app is showing it.
+A drone with the camera expansion board of a XIAO ESP32-S3 Sense streams its camera over UDP port 81, and the app shows the picture behind the sticks: fitted to the screen without cropping and dimmed, so the lines and text on top stay readable. After 1.5 s without a new frame the picture is cleared, so a frozen frame is never taken for live video. The camera on the drone runs only while the app is showing it.
 
 Settings > Camera turns the picture on or off and links to the camera resolution parameter (`cam_res`; the drone sends at most 15 frames a second). The console shows the current resolution and frame rate. A drone without a camera flies as usual.
 
