@@ -17,7 +17,7 @@ The flight controller (CERN-OHL-S-2.0) and the firmware (GPL-3.0-or-later) are o
   <img src="docs/images/sparrow-3d-bottom.png" width="380" alt="3D render of Sparrow from below: the flight controller on four silicone grommets under the frame, with the XIAO ESP32-S3 and the GY-530 ToF sensor facing the ground">
 </p>
 
-<p align="center"><sub>3D renders; the GY-521 between the flight controller and the frame, the antenna, the battery and the wires are not shown. Photos of the built drone are in <a href="docs/photos/README.md">docs/photos</a>.</sub></p>
+<p align="center"><sub>3D renders; the antenna, the battery and the wires are not shown. Photos of the built drone are in <a href="docs/photos/README.md">docs/photos</a>.</sub></p>
 
 ## Highlights
 
@@ -46,7 +46,7 @@ Sparrow is built from parts sold by common electronics and hobby shops. JLCPCB m
 | 720 coreless brushed motors | 7 x 20 mm, 1 mm shaft; two run clockwise and two counter-clockwise | Jin-Hua Electronics |
 | Propellers | 55 mm for 1 mm shafts, in clockwise and counter-clockwise pairs | Shopee |
 | Battery | 1S LiPo, 400 mAh 20C, PH2.0 plug; about 3.5-4 minutes of flight | Shopee |
-| Mounting parts | O-type double-flanged cable grommets as motor collars (7 mm inside), M2 x 14 mm screws, M2 nylon lock nuts, 2.6 x 5 x 1 mm nylon washers, M2 silicone grommets, a battery strap up to 12 mm wide | Shopee |
+| Mounting parts | O-type double-flanged cable grommets as motor collars (7 mm inside), M2 x 14 mm screws, M2 nylon lock nuts, 2.6 x 5 x 1 mm nylon washers, M2 silicone grommets, a nylon cable tie for the battery | Shopee |
 
 Shops: [JLCPCB](https://jlcpcb.com/), [Jin-Hua Electronics](https://www.jin-hua.com.tw/) and [Shopee](https://shopee.tw/), the last two in Taiwan.
 

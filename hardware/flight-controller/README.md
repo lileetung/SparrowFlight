@@ -79,7 +79,7 @@ SCL and SDA are swapped against the Arduino default (`Wire.begin(6, 5)`); this k
 | 55 mm propellers for 1 mm shafts, 2 clockwise and 2 counter-clockwise per drone (buy spares) | 2 pairs |
 | O-type double-flanged cable grommets as motor collars, 7 mm inner diameter, for 9 mm holes | 4 |
 | 1S LiPo 400 mAh with PH2.0 plug, and a PH2.0 pigtail | 1 |
-| Battery strap, up to 12 mm wide (it goes through the frame's 2.2 x 12 mm slots) | 1 |
+| Nylon cable tie for the battery (it goes through the frame's 2.2 x 12 mm slots and between the frame and the GY-521) | 1 |
 | M2 x 14 mm screws, M2 nylon lock nuts, 2.6 x 5 x 1 mm nylon washers, M2 silicone grommets | 4 each |
 | 2.54 mm pin headers (two 1 x 7 for the XIAO if not included, one 1 x 6 for the GY-530) | |
 

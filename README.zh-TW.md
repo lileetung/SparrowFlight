@@ -17,7 +17,7 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
   <img src="docs/images/sparrow-3d-bottom.png" width="380" alt="Sparrow 3D 渲染圖，從下方看：飛控板用四顆矽膠防震球掛在機架下，XIAO ESP32-S3 和 GY-530 ToF 感測器朝向地面">
 </p>
 
-<p align="center"><sub>3D 渲染圖，未包含飛控板與機架之間的 GY-521、天線、電池與電線。實機照片見 <a href="docs/photos/README.md">docs/photos</a>。</sub></p>
+<p align="center"><sub>3D 渲染圖，未包含天線、電池與電線。實機照片見 <a href="docs/photos/README.md">docs/photos</a>。</sub></p>
 
 ## 特色
 
@@ -46,7 +46,7 @@ Sparrow 使用一般電子零件與模型零件通路買得到的零件。飛控
 | 720 空心杯有刷馬達 | 7 × 20 mm、軸徑 1 mm；兩顆順時針、兩顆逆時針 | 今華電子 |
 | 槳 | 55 mm、孔徑 1 mm，正反槳成對 | 蝦皮 |
 | 電池 | 1S LiPo 400 mAh 20C、PH2.0 插頭；可飛約 3.5–4 分鐘 | 蝦皮 |
-| 固定件 | O 型雙層護線圈（固定馬達，內徑 7 mm）、M2 × 14 mm 螺絲、M2 尼龍防鬆螺帽、2.6 × 5 × 1 mm 尼龍墊片、M2 矽膠防震球、電池綁帶（寬 12 mm 以內） | 蝦皮 |
+| 固定件 | O 型雙層護線圈（固定馬達，內徑 7 mm）、M2 × 14 mm 螺絲、M2 尼龍防鬆螺帽、2.6 × 5 × 1 mm 尼龍墊片、M2 矽膠防震球、綁電池用的尼龍束線帶 | 蝦皮 |
 
 賣場：[JLCPCB](https://jlcpcb.com/)、[今華電子](https://www.jin-hua.com.tw/)、[蝦皮](https://shopee.tw/)，後兩者在台灣。
 

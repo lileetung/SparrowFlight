@@ -19,7 +19,7 @@ File: [`sparrow-frame-v1.0.dxf`](sparrow-frame-v1.0.dxf) (units mm, 1:1, every l
 | Leg flex slit | 1.65 mm (the narrowest slot a 1.5 mm end mill can cut) |
 | Leg fit | about 0.01 mm interference at the plate faces; the legs snap on, no glue |
 | Flight-controller holes | 4 x 2.2 mm on a 30.5 x 30.5 mm pattern, for M2 screws |
-| Battery-strap slots | 2.2 x 12 mm at x = +-19.9 mm; the strap only loops around the 1.5 mm edge outside each slot |
+| Battery-strap slots | 2.2 x 12 mm at x = +-19.9 mm, for the cable tie that holds the battery |
 | Leg reach | 23.8 mm below the frame |
 
 The leg slit is required. The two clip notches face each other, so a rigid leg cannot get onto the frame; the legs spread about 1.6 mm while snapping on.
@@ -32,10 +32,14 @@ Send the DXF to a CNC shop that cuts carbon plate. Ask for 1.5 mm 3K carbon fibr
 
 ## Assembly
 
+<img src="../../docs/images/sparrow-exploded.png" width="560" alt="Exploded view of Sparrow, parts numbered 1 to 13 from the top: propellers, motors and motor collars above the motor rings; the battery and four lock nuts above the frame; the legs below its arms; the washers, the flight controller on its silicone grommets with the GY-521 on its frame side, the XIAO ESP32-S3 Plus below it, and the four screws at the bottom">
+
+1 propeller, 2 motor, 3 motor collar (O-type double-flanged cable grommet), 4 battery, 5 M2 nylon lock nut, 6 frame, 7 landing-gear leg, 8 nylon washer, 9 silicone grommet, 10 GY-521, 11 flight controller, 12 XIAO ESP32-S3 Plus, 13 M2 x 14 mm screw. The cable tie, the antenna and the wires are not shown.
+
 1. Snap each landing-gear leg into its arm slot and motor-ring notch. Spread the two prongs slightly until they click over the frame.
 2. Push the motors into the 9 mm rings, each in an O-type double-flanged cable grommet.
-3. Mount the flight controller under the frame. Each corner, from the frame side: M2 x 14 mm screw, frame, 1 mm nylon washer, silicone grommet (the board sits in the grommet's groove), M2 nylon lock nut. Tighten the four corners evenly and stop before the grommets flatten. The washers keep about 4 mm between the frame and the board.
-4. Strap the battery on top of the frame through the two strap slots.
+3. Mount the flight controller under the frame. Each corner, from the ground up: M2 x 14 mm screw with its head under the board, silicone grommet (the board sits in its groove), 1 mm nylon washer, frame, and the M2 nylon lock nut on top of the frame. Tighten the four nuts evenly and stop before the grommets flatten. The washers keep about 4 mm between the frame and the board.
+4. Tie the battery on top of the frame with a nylon cable tie: down through one strap slot, across under the frame between the frame and the GY-521, and up through the other slot.
 5. Keep the WiFi antenna away from the carbon fibre, battery and board. Mount it upright on the outside of a leg.
 
 Motor order and spin, with the nose (the flight controller's USB end) at +y: M3 front right and M1 rear left spin counter-clockwise, M4 rear right and M2 front left spin clockwise (the Crazyflie convention).
