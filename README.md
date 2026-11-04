@@ -28,9 +28,11 @@ The flight controller (CERN-OHL-S-2.0) and the firmware (GPL-3.0-or-later) are o
 
 ## Demo
 
-<a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow taking off from a rooftop and hovering, flown from an iPhone"></a>
+<img src="docs/images/test-flight.gif" width="240" alt="Sparrow taking off from a rooftop and hovering, flown from an iPhone">
 
-Full clip (36 s): [docs/videos/test-flight.mp4](docs/videos/test-flight.mp4).
+Full clip (30 s):
+
+https://github.com/user-attachments/assets/7a1055ea-dd3d-42d8-9035-7807f2834d85
 
 ## Specifications and parts
 

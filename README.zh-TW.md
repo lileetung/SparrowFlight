@@ -28,9 +28,11 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 
 ## 展示
 
-<a href="docs/videos/test-flight.mp4"><img src="docs/images/test-flight.gif" width="240" alt="Sparrow 從頂樓起飛、懸停，用 iPhone 遙控"></a>
+<img src="docs/images/test-flight.gif" width="240" alt="Sparrow 從頂樓起飛、懸停，用 iPhone 遙控">
 
-完整影片（36 秒）：[docs/videos/test-flight.mp4](docs/videos/test-flight.mp4)。
+完整影片（30 秒）：
+
+https://github.com/user-attachments/assets/7a1055ea-dd3d-42d8-9035-7807f2834d85
 
 ## 規格與零件
 
