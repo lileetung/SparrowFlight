@@ -14,4 +14,4 @@ To be published, each with its licence text in its folder:
 | `hardware/flight-controller/` | CERN-OHL-S-2.0 | Make, modify and sell boards; if you distribute boards or modified designs, make the complete design sources available under the same licence. |
 | `firmware/` | GPL-3.0 | Modify and distribute the firmware; if you distribute it, including inside a product, provide its source under GPL-3.0. |
 
-The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not licensed under any of these terms. SparrowFlight, the iOS app, is not open source: `software/` only describes it.
+The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not licensed under any of these terms.

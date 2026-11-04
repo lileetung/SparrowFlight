@@ -20,7 +20,6 @@ The frame, the flight controller and the firmware are being prepared for release
 ## Highlights
 
 - **Off-the-shelf parts.** The microcontroller and the sensors are breakout modules sold by common electronics suppliers; the motors, propellers and battery are standard micro-drone parts.
-- **Made to be manufactured.** The flight controller comes with a BOM and a placement file for assembly at JLCPCB; the frame is a single DXF for CNC milling.
 - **Height hold.** A downward time-of-flight sensor holds the height above the surface below, and drives button take-off and automatic landing.
 - **Phone control over WiFi.** The drone runs its own access point and advertises over Bluetooth, and it also accepts ESP-Drone's commander packets.
 - **Flight log on board.** A blackbox records recent flights in flash for later analysis.
@@ -67,7 +66,7 @@ Sparrow is built from parts sold by common electronics and hobby suppliers. The 
 | 720 coreless brushed motor, 2 clockwise and 2 counter-clockwise | 4 | propulsion |
 | 55 mm propellers for 1 mm shafts | 2 pairs | 2 clockwise and 2 counter-clockwise; spares recommended |
 | 1S LiPo, 400 mAh, PH2.0 plug | 1 | power, about 3.5-4 minutes of flight |
-| Rubber motor collars, M2 screws, nylon lock nuts, nylon washers and silicone grommets | 4 each | motor and flight controller mounting |
+| O-type double-flanged cable grommets (motor collars), M2 screws, nylon lock nuts, nylon washers and silicone grommets | 4 each | motor and flight controller mounting |
 | Flight controller board, 40 x 40 mm | 1 | ordered from a PCB service, which assembles the power stage and the motor drivers |
 | Carbon-fibre frame, 1.5 mm, 100 x 100 mm | 1 | CNC-milled from a single DXF |
 
@@ -87,6 +86,6 @@ For questions and problem reports, see [SUPPORT.md](SUPPORT.md). How to contribu
 
 ## License
 
-The documentation and photos are licensed under CC BY-SA 4.0. The frame (CC BY-NC-SA 4.0, adapted from [LiteWing](https://github.com/Circuit-Digest/LiteWing)), the flight controller (CERN-OHL-S-2.0) and the firmware (GPL-3.0) will be released under their own licences. The iOS app is not open source. See [LICENSE.md](LICENSE.md).
+The documentation and photos are licensed under CC BY-SA 4.0. The frame (CC BY-NC-SA 4.0, adapted from [LiteWing](https://github.com/Circuit-Digest/LiteWing)), the flight controller (CERN-OHL-S-2.0) and the firmware (GPL-3.0) will be released under their own licences. See [LICENSE.md](LICENSE.md).
 
 The names "SparrowFlight" and "Sparrow" and the Sparrow logo are not covered by these licences. Once the designs are published, derived versions may be built and shared under their licences, but must not be presented as official.

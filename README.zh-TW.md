@@ -20,7 +20,6 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 ## 特色
 
 - **現成零件**：主控與感測器都是一般電子零件通路販售的模組，馬達、螺旋槳與電池則是小型無人機的標準零件。
-- **為量產設計**：飛控板附 JLCPCB 組裝用的 BOM 與座標檔，機架為單一 DXF 檔，可直接 CNC 切割。
 - **定高**：朝下的 ToF 測距維持離地高度，並用於按鈕起飛與自動降落。
 - **手機 WiFi 操控**：無人機自建 WiFi 熱點並以藍牙廣播供 App 搜尋，也相容 ESP-Drone 的 commander 封包。
 - **機上飛行紀錄**：黑盒子將最近幾次飛行記錄在 flash，供事後分析。
@@ -38,9 +37,9 @@ SparrowFlight 是以容易取得的零件為設計前提的小型四軸無人機
 | 機架 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
 | 飛控板 | 1.0 | 已完成飛行測試，設計檔整理中，將放在 [hardware/](hardware/README.md) |
 | 韌體 | 1.0.0 | 已完成飛行測試，原始碼整理中，將放在 [firmware/](firmware/README.md) |
-| SparrowFlight iOS App | 1.0.0 | 已在 [App Store](https://apps.apple.com/app/id6829419743) 上架，見 [software/](software/README.md)（英文） |
+| SparrowFlight iOS App | 1.0.0 | 已在 [App Store](https://apps.apple.com/app/id6829419743) 上架，見 [software/](software/README.md) |
 
-機架、飛控板與韌體將連同材料清單與組裝說明公開於本 repo，授權見 [LICENSE.md](LICENSE.md)（英文）。
+機架、飛控板與韌體將連同材料清單與組裝說明公開於本 repo，授權見 [LICENSE.md](LICENSE.md)。
 
 ## 規格
 
@@ -67,7 +66,7 @@ Sparrow 使用一般電子零件與模型零件通路都買得到的零件；飛
 | 720 空心杯有刷馬達，正轉、反轉各 2 顆 | 4 | 動力 |
 | 55 mm 螺旋槳，適用 1 mm 馬達軸 | 2 對 | 正槳、反槳各 2 片，建議多備幾片 |
 | 1S 鋰聚電池，400 mAh，PH2.0 接頭 | 1 | 電源，約可飛行 3.5–4 分鐘 |
-| 馬達橡膠套、M2 螺絲、尼龍防鬆螺帽、尼龍墊片與矽膠防震球 | 各 4 | 固定馬達與飛控板 |
+| O 型雙層護線圈、M2 螺絲、尼龍防鬆螺帽、尼龍墊片與矽膠防震球 | 各 4 | 固定馬達與飛控板 |
 | 飛控板，40 × 40 mm | 1 | 向 PCB 廠下單，由廠商焊好電源與馬達驅動電路 |
 | 碳纖維機架，1.5 mm，100 × 100 mm | 1 | 依單一 DXF 檔 CNC 切割 |
 
@@ -79,14 +78,14 @@ Sparrow 使用一般電子零件與模型零件通路都買得到的零件；飛
 
 iOS 版 SparrowFlight 透過藍牙搜尋附近的無人機、加入所選無人機的 WiFi 網路，並在開放操控前檢查無人機狀態。支援按鈕起飛與降落，或以推力搖桿控制高度；可在搖桿後方顯示機上相機畫面，並編輯飛行參數。主控台與每次連線的飛行紀錄可協助調校。App 不收集任何個人資料。
 
-可從 [App Store](https://apps.apple.com/app/id6829419743) 下載。文件：[App 說明](software/README.md)（英文）與[隱私權政策](software/PRIVACY.md)（英文）。
+可從 [App Store](https://apps.apple.com/app/id6829419743) 下載。文件：[App 說明](software/README.md)與[隱私權政策](software/PRIVACY.md)。
 
 ## 支援與貢獻
 
-問題與回報請見 [SUPPORT.md](SUPPORT.md)（英文）。參與方式請見 [CONTRIBUTING.md](CONTRIBUTING.md)（英文），所有參與者都應遵守[行為準則](CODE_OF_CONDUCT.md)（英文）。
+問題與回報請見 [SUPPORT.md](SUPPORT.md)。參與方式請見 [CONTRIBUTING.md](CONTRIBUTING.md)，所有參與者都應遵守[行為準則](CODE_OF_CONDUCT.md)。
 
 ## 授權
 
-文件與照片採用 CC BY-SA 4.0。機架（CC BY-NC-SA 4.0，改自 [LiteWing](https://github.com/Circuit-Digest/LiteWing)）、飛控板（CERN-OHL-S-2.0）與韌體（GPL-3.0）將以各自的授權釋出。iOS App 不開源。詳見 [LICENSE.md](LICENSE.md)（英文）。
+文件與照片採用 CC BY-SA 4.0。機架（CC BY-NC-SA 4.0，改自 [LiteWing](https://github.com/Circuit-Digest/LiteWing)）、飛控板（CERN-OHL-S-2.0）與韌體（GPL-3.0）將以各自的授權釋出。詳見 [LICENSE.md](LICENSE.md)。
 
 「SparrowFlight」、「Sparrow」名稱與麻雀 logo 不在上述授權範圍內。設計公開後，可依授權製作並分享衍生版本，但不得宣稱為官方版本。
